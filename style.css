@@ -1,0 +1,116 @@
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --font-family: 'Figtree', sans-serif;
+    --Font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: var(--Font-size);
+    font-family: var(--font-family);
+}
+
+Body {
+    height: 100vh;
+    background-color: var(--Yellow);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--White);
+    border-radius: 5%;
+    padding: 1em;
+    flex-wrap: nowrap;
+    border: 1px solid black;
+    box-shadow: 7px 7px var(--Black);
+}
+
+.card-1 img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.card-2 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-2 button {
+    background-color: var(--Yellow);
+    outline: none;
+    border: none;
+    width: 40%;
+    height: 1.8em;
+    border-radius: 5px;
+    margin: 1em 0em 2em 0em;
+}
+
+.card-2 span {
+    color: var(--Black);
+    margin-bottom: 1em;
+  
+}
+
+.card-2 h1 {
+    margin-bottom: 1em;
+    color: var(--Black);
+    cursor: pointer;
+  
+}
+
+.card-2 h1:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+
+.card-2 p {
+    color: var(--Grey);
+    margin-bottom: 1em;
+    font-size: 16px;
+}
+
+.card-3 {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.card-3 img {
+    width: 13%;
+    margin-right: .6em;
+}.card-3 p{
+    color: var(--Black);
+}
+
+.attribution {
+    margin-top: 2em;
+}
+
+@media (max-width:400px) {
+    body {
+        padding: 6em;
+    }
+
+    .container {
+        width: 18em;
+    }
+
+}
